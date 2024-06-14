@@ -1,27 +1,71 @@
-.button {
+.btn-primary {
+  width: 206px;
+  height: 70px;
+  padding: 18px 48px;
+  box-shadow: 3px 3px 12px 0 rgba(0, 0, 0, 0.12);
+  background: var(--color-dark);
+  @include font-inter(24px, 600, 24px);
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-light);
+}
 
-  &__text {
-    /// ..
-  }
+.btn-more {
+  border: 2.24px solid;
+  border-radius: 2px 27px 27px 27px;
+  padding: 8px 22px 8px 16px;
+  width: 50%;
+  height: 45px;
+  @include font-inter(16px, 500);
+  text-align: center;
+  cursor: pointer;
 
-  &__icon {
-    //..
-  }
-
+  position: relative;
 
   &::after {
-      //...
+    position: absolute;
+    top: -22px;
+    left: -20px;
   }
 
-  &:focus {
-    //...
+  &--pink {
+    background: var(--color-pink);
+    border-color: var(--color-pink-border);
+    color: var(--color-light);
+
+    &::after {
+      content: url("../../images/arrows/pink_arrow.svg");
+    }
   }
 
-  &--active {
-    //...
+  &--blue {
+    background: var(--color-blue-soft);
+    border-color: var(--color-blue-border);
+    color: var(--color-light);
+
+    &::after {
+      content: url("../../images/arrows/blue_arrow.svg");
+    }
   }
 
-  &--disabled {
-    //...
+  &--yellow {
+    background: var(--color-yellow);
+    border-color: var(--color-yellow-border);
+    color: var(--color-light);
+
+    &::after {
+      content: url("../../images/arrows/yellow_arrow.svg");
+    }
+  }
+
+  &--green {
+    box-shadow: 4px 4px 11px 0 rgba(9, 33, 247, 0.16);
+    background: var(--color-green);
+    border-color: var(--color-green-border);
+    color: var(--color-light);
+
+    &::after {
+      content: url("../../images/arrows/green_arrow.svg");
+    }
   }
 }

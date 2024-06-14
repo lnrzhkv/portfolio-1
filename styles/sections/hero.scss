@@ -1,0 +1,47 @@
+.hero-wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 110px;
+
+  & .hero-logo {
+    margin-bottom: 24px;
+    width: 292px;
+    transform: rotate(-5deg);
+    position: relative;
+
+    & .hero-logo-arrow {
+      position: absolute;
+      top: 38px;
+    }
+
+    & .hero-logo-text {
+      background-color: var(--color-pink-soft);
+      width: 65px;
+      height: 43px;
+      box-shadow: 1px 1px 11px 0 rgba(0, 0, 0, 0.08);
+      @include font-handlee(32px, 400);
+      text-align: center;
+      position: absolute;
+      right: 12px;
+      top: 38px;
+      transform: rotate(-4deg);
+    }
+  }
+  & .hero-info {
+    @include flex(center, flex-start);
+    gap: 84px;
+    max-width: 1157px;
+    & h1 {
+      @include font-inter(64px, 600);
+      margin: 0;
+    }
+    & .right-content {
+      @include flex(center, flex-start);
+      flex-direction: column;
+      gap: 30px;
+      & .hero-info-descr {
+        @include font-inter(24px, 400, 32px);
+      }
+    }
+  }
+}

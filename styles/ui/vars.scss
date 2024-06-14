@@ -1,3 +1,31 @@
 :root {
-  //....
+  // DECORATORS
+  --decorator-size: 58px;
+  --decorator-size-negative: -58px;
+
+  // COLORS
+  --color-dark: #0c0c0c;
+  --color-light: #fff;
+  --color-gray: #706f6f;
+
+  --color-pink: #f384d4;
+  --color-pink-soft: #ffc9f0;
+  --color-pink-border: #db4a90;
+  --box-shadow-pink: 5px 5px 20px 0 rgba(255, 201, 240, 0.514);
+
+  --color-blue: #9ddcff;
+  --color-blue-soft: #5ab5e8;
+  --color-blue-border: #1c6ab1;
+  --box-shadow-blue: 5px 5px 20px 0 rgba(157, 221, 255, 0.527);
+
+  --color-yellow: #eecd56;
+  --color-yellow-soft: #ffe68c;
+  --color-yellow-border: #bb9c2a;
+  --box-shadow-yellow: 5px 5px 20px 0 rgba(255, 230, 140, 0.5);
+
+  --color-green: #7cf072;
+  --color-green-border: #4ed543;
+
+  // radius
+  --radii-xs: 6px;
 }

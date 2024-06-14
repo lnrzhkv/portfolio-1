@@ -1,19 +1,24 @@
 @mixin flex($j: center, $a: center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $j;
+  align-items: $a;
 }
 
-@mixin font-handlee($fsize: normal, $fweight: normal, $lh: normal, $ls: normal) {
-  font-family: 'Handlee', sans-serif;
+@mixin font-handlee(
+  $fsize: normal,
+  $fweight: normal,
+  $lh: normal,
+  $ls: normal
+) {
+  font-family: "Handlee", cursive;
   font-weight: $fweight;
   font-size: $fsize;
   line-height: $lh;
   letter-spacing: $ls;
 }
 
-@mixin font-inter($fsize: normal, $fweight: normal, $lh: normal, $ls: normal){
-  font-family: 'Inter', sans-serif;
+@mixin font-inter($fsize: normal, $fweight: normal, $lh: normal, $ls: normal) {
+  font-family: "Inter", sans-serif;
   font-weight: $fweight;
   font-size: $fsize;
   line-height: $lh;

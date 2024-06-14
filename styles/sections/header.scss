@@ -1,3 +1,33 @@
-.header {
+header {
+  height: 170px;
+  padding: 60px 16px;
 
+  & .header-wrapper {
+    @include flex(space-between);
+  }
+
+  & .header-logo {
+    @include flex;
+    gap: 16px;
+  }
+
+  & .header-logo-text {
+    @include font-handlee(36px, 400);
+    text-align: center;
+  }
+
+  & .header-menu-list {
+    list-style: none;
+    margin: 0;
+    @include flex;
+    gap: 32px;
+  }
+
+  & .header-menu-list_item a {
+    @include font-inter(24px, 400);
+
+    &:hover {
+      border-bottom: 2px solid var(--color-dark);
+    }
+  }
 }

@@ -4,12 +4,201 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.scss" />
+
     <title>Portfolio-1</title>
   </head>
   <body>
-    <header>header</header>
-    <main>main</main>
-    <footer>footer</footer>
+    <header>
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <img src="images/icons/portfolio-logo.svg" alt="header-logo" />
+          <span class="header-logo-text"><b>znisa</b></span>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-list_item"><a href="#">Portfolio</a></li>
+            <li class="header-menu-list_item"><a href="#">Hire Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-wrapper">
+        <div class="hero-logo">
+          <img src="images/user-logo.png" alt="user-logo" />
+          <img
+            class="hero-logo-arrow"
+            src="images/arrows/hero-arrow.svg"
+            alt="hero-arrow"
+          />
+          <span class="hero-logo-text"><b>znisa</b></span>
+        </div>
+        <div class="hero-info">
+          <div class="left-content">
+            <h1>
+              I <span class="text-select">design</span> top notch websites
+            </h1>
+          </div>
+          <div class="right-content">
+            <span class="hero-info-descr"
+              >I’ll design your website and will develop to land it on internet
+              using No-code.</span
+            >
+            <button class="btn-primary">Hire me</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo-head">
+          <h2 class="title"><b>What i do?</b></h2>
+          <img src="images/arrows/figure-arrow.svg" alt="figure-arrow" />
+        </div>
+        <div class="promo-wrapper">
+          <div class="promo-card">
+            <span class="promo-card-subtitle_1"><b>Pen/Paper</b></span>
+            <div class="promo-card-content">
+              <img src="images/icons/pen.svg" alt="pen/paper" />
+              <span class="promo-card-title">User Research Design</span>
+            </div>
+          </div>
+          <div class="promo-card">
+            <span class="promo-card-subtitle_2"><b>Figma</b></span>
+            <div class="promo-card-content">
+              <img src="images/icons/eye.svg" alt="eye" />
+              <span class="promo-card-title">UI & Product Design</span>
+            </div>
+          </div>
+          <div class="promo-card">
+            <span class="promo-card-subtitle_3"><b>Webflow</b></span>
+            <div class="promo-card-content">
+              <img src="images/icons/star.svg" alt="star" />
+              <span class="promo-card-title">No-code Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects-layout">
+          <div class="title-wrapper">
+            <span class="title"><b>Featured Projects</b></span>
+            <img src="images/arrows/projects-arrow.png" alt="arrow" />
+            <span class="subtitle">Have designed morethan 20 projects</span>
+          </div>
+          <div class="projects-content-wrapper">
+            <div class="projects-content-item item_1">
+              <img src="images/card-images/no-code.png" alt="no-code" />
+              <div class="projects-content-info">
+                <span class="projects-content-text"
+                  ><b>4 style Portfolio design</b></span
+                >
+                <button class="btn-more btn-more--pink">No-Code</button>
+              </div>
+            </div>
+            <div class="projects-content-item item_2">
+              <img src="images/card-images/ui design.png" alt="ui design" />
+              <div class="projects-content-info">
+                <span class="projects-content-text"
+                  ><b>Color system for app</b></span
+                >
+                <button class="btn-more btn-more--blue">UI Design</button>
+              </div>
+            </div>
+            <div class="projects-content-item item_3">
+              <img src="images/card-images/ux design.png" alt="ux design" />
+              <div class="projects-content-info">
+                <span class="projects-content-text"
+                  ><b>Onboarding screen process</b></span
+                >
+                <button class="btn-more btn-more--yellow">UX Design</button>
+              </div>
+            </div>
+            <div class="projects-content-item item_4">
+              <img src="images/card-images/landing.png" alt="landing" />
+              <div class="projects-content-info">
+                <span class="projects-content-text"
+                  ><b>Finance Landing page</b></span
+                >
+                <button class="btn-more btn-more--green">Landing</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <div class="experience-layout">
+          <div class="title-wrapper">
+            <span class="title"><b>Work Experience</b></span>
+            <img src="images/arrows/projects-arrow.png" alt="arrow" />
+            <span class="subtitle"
+              >Have been designing since my past 4 years</span
+            >
+          </div>
+          <div class="content">
+            <div class="top-left-decorator"></div>
+            <div class="top-right-decorator" /></div>
+            <div class="bottom-left-decorator" /></div>
+            <div class="bottom-right-decorator" /></div>
+
+            <div class="content__wrapper">
+              <div class="order-row order-row">
+                  <div class="order-row__color order-row__color--yellow"><b>1</b></div>
+                  <div class="order-row__content">
+                    <div class="order-row__content-title">Design intern at <b>Google</b></div>
+                    <div class="order-row__content-description">Worked on design system at Material 3 designs</div>
+                    <div class="order-row__content-datetime">20, April 2021</div>
+                  </div>
+
+              </div>
+              <div class="order-row ">
+                <div class="order-row__color order-row__color--blue"><b>2</b></div>
+                <div class="order-row__content">
+                  <div class="order-row__content-title">Sr. UI/UX Designer at <b>Microsoft</b></div>
+                  <div class="order-row__content-description">Worked on design system at Material 3 designs</div>
+                  <div class="order-row__content-datetime">20, April 2022</div>
+                </div>
+
+            </div>
+
+            <div class="order-row">
+              <div class="order-row__color order-row__color--pink"><b>3</b></div>
+              <div class="order-row__content">
+                <div class="order-row__content-title">Software Engineer at <b>SASS Startup</b></div>
+                <div class="order-row__content-description">Worked on design system at Material 3 designs</div>
+                <div class="order-row__content-datetime">20, April 2023</div>
+              </div>
+
+          </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="">footer</footer>
   </body>
 </html>
