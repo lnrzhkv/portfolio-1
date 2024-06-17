@@ -1,3 +1,35 @@
 .contacts {
+  display: flex;
+  gap: 210px;
 
+  & .title-wrapper {
+    position: relative;
+    @include flex(flex-start);
+    gap: 122px;
+    width: 246px;
+    flex-direction: column;
+    padding: 24px 56px 0;
+    height: fit-content;
+    width: 254px;
+
+    img {
+      position: absolute;
+      right: 51px;
+      bottom: 105px;
+    }
+  }
+}
+
+form {
+  width: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: fit-content;
+
+  & .btn-contacts {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(1deg);
+  }
 }
