@@ -1,16 +1,16 @@
 .contacts {
   display: flex;
-  gap: 210px;
+  justify-content: space-between;
+  margin-bottom: 162px;
 
   & .title-wrapper {
     position: relative;
     @include flex(flex-start);
     gap: 122px;
-    width: 246px;
-    flex-direction: column;
-    padding: 24px 56px 0;
-    height: fit-content;
     width: 254px;
+    flex-direction: column;
+    padding: 24px 0 0 56px;
+    height: fit-content;
 
     img {
       position: absolute;
@@ -27,9 +27,101 @@ form {
   gap: 60px;
   height: fit-content;
 
+  & .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    & .form-info {
+      display: flex;
+      width: 610px;
+    }
+  }
+
+  label {
+    @include font-handlee(32px, 400);
+    height: 45px;
+    border-left: 2px solid var(--color-dark);
+  }
+
+  & .--pink {
+    background-color: var(--color-pink-soft);
+  }
+
+  & .--yellow {
+    background-color: var(--color-yellow-soft);
+  }
+
+  & .--blue {
+    background-color: var(--color-blue);
+  }
+
+  input {
+    border: none;
+    border-bottom: 2px solid var(--color-dark);
+    @include font-handlee(28px, 400, 32px);
+  }
+
   & .btn-contacts {
     display: flex;
     justify-content: flex-end;
     transform: rotate(1deg);
+    width: 100%;
+
+    & .btn-primary {
+      padding: 16px 32px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts {
+    gap: 36px;
+    flex-direction: column;
+    padding-left: 16px;
+    margin-bottom: 30px;
+
+    & .title-wrapper {
+      padding: 0;
+      justify-content: flex-start;
+      gap: 28px;
+      width: 163px;
+      height: 140px;
+
+      & img {
+        width: 24px;
+        height: 38px;
+        position: absolute;
+        top: 32px;
+        left: 4px;
+        transform: rotate(32deg);
+      }
+    }
+
+    form {
+      & .form-wrapper {
+        gap: 30px;
+
+        & .form-info {
+          height: 21px;
+        }
+
+        & label {
+          font-size: 16px;
+          height: 21px;
+        }
+      }
+
+      & .btn-contacts {
+        width: 120px;
+
+        & .btn-primary {
+          padding: 8px 19px;
+          width: 120px;
+          height: 39px;
+          font-size: 16px;
+        }
+      }
+    }
   }
 }

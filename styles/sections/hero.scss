@@ -45,3 +45,64 @@
     }
   }
 }
+
+// адаптив
+
+@media (max-width: 375px) {
+  .hero-wrapper {
+    height: fit-content;
+    margin-top: 76px;
+    margin-bottom: 76px;
+
+    .hero-logo {
+      width: 155px;
+      height: 57px;
+
+      & img {
+        position: relative;
+        width: 60px;
+        height: 57px;
+      }
+      .hero-logo-arrow {
+        position: absolute;
+        width: 38px;
+        height: 22px;
+        top: 18px;
+      }
+
+      .hero-logo-text {
+        position: absolute;
+        top: 12px;
+        width: 41px;
+        height: 27px;
+        font-size: 20px;
+      }
+    }
+
+    .hero-info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      & .left-content h1 {
+        font-size: 32px;
+      }
+      & .right-content {
+        gap: 18px;
+
+        & .hero-info-descr {
+          font-size: 16px;
+          line-height: 20px;
+          width: fit-content;
+        }
+
+        & .btn-primary {
+          padding: 6px 12px;
+          height: 34px;
+          font-size: 16px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}

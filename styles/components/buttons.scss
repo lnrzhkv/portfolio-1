@@ -69,3 +69,32 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .btn-more {
+    width: 104px;
+    height: 49px;
+    font-size: 12px;
+    padding: 6px 16px 6px 13px;
+
+    &--pink::after {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--blue::after {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--yellow::after {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--green::after {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

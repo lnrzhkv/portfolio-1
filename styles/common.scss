@@ -12,9 +12,10 @@ body {
 
 @media (max-width: 375px) {
   .base-layout-block {
+    overflow: hidden;
     width: 100%;
     max-width: 100%;
-    margin-left: 42px;
+    margin-left: 45px;
     margin-right: 19px;
   }
 }
@@ -27,6 +28,7 @@ main {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid var(--color-dark);
 
   @extend .base-layout-block;
 }
@@ -54,6 +56,17 @@ a {
 
 .subtitle {
   @include font-inter(24px, 400, 140%);
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
 }
 
 .text-select {

@@ -45,3 +45,63 @@
     }
   }
 }
+
+// адаптив
+
+@media (max-width: 375px) {
+  .projects {
+    height: fit-content;
+
+    .projects-layout {
+      flex-direction: column;
+      padding-left: 16px;
+      gap: 30px;
+      margin-bottom: 75px;
+
+      & .title-wrapper {
+        padding: 0;
+        justify-content: flex-start;
+        gap: 28px;
+        width: 163px;
+        height: 140px;
+
+        & img {
+          width: 24px;
+          height: 38px;
+          position: absolute;
+          top: 32px;
+          left: 16px;
+          transform: rotate(48deg);
+        }
+      }
+
+      & .projects-content-wrapper {
+        grid-template-columns: 300px;
+        gap: 16px;
+
+        & .projects-content-item {
+          padding: 16px;
+          width: 300px;
+          height: 257px;
+
+          & img {
+            width: 266px;
+            height: 159px;
+            margin-bottom: 16px;
+          }
+
+          & .projects-content-info {
+            width: 267px;
+            height: 49px;
+            margin: 0;
+            gap: 26px;
+
+            & .projects-content-text {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
